@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+# Python
+# the concept and much of the code came from radar's answer to this question 
+# https://gis.stackexchange.com/questions/60730/create-text-files-from-a-loop-with-python/60738# 
 
 import glob
 import os
