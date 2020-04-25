@@ -1,5 +1,7 @@
 # Create-Feh-captions-from-image-filenames
 # Python
+# The idea and much of the code came from radar's answer to this question:
+# https://gis.stackexchange.com/questions/60730/create-text-files-from-a-loop-with-python/60738
 # Requirements - glob, os, and unidecode
 # User must replace the path with the path of the directory containing Feh image files.
 # The script iterates over the files in the directory, creating text files from the filename to be used a Feh captions
