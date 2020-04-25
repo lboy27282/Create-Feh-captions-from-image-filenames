@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+
+import glob
+import os
+import unidecode
+
+# replace /home/pi/art in the line below with the path containing your images. 
+os.chdir(r"/home/pi/art")
+
+#iterates over all files in the directory, so the directory should just contain images   
+for file in glob.glob("*.*"):        
+        f = open( str(file) + ".txt", "w") #creates a new file using the .jpg filename, but with the .txt extension
+        s=(file.rsplit( ".", 1 )[ 0 ]) #split, return left portion
+        s=(s.replace("_"," ")) #replace underscores
+        s = unidecode.unidecode(s) #convert to Feh-friendly text (will not display accented characters
+        f.write(str(s)) #write to the text file
+        f.close()
